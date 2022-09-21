@@ -16,7 +16,6 @@ loadRData <- function(fileName){
   get(ls()[ls() != "fileName"])
 }
 
-
 # Read weighted data ------------------------------------------------------
 
 base_dir_wei <- 'data/weighted'

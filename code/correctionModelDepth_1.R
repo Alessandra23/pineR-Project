@@ -89,7 +89,16 @@ model_nn_25 <- correctionModel(data = data_NN_25, model = 'nn',
                                hidden = 4, algorithm = "rprop+", seed = 023)
 
 
+models_corr_25_depth_1 <- list(lasso = model_lasso_25,
+                          quadratic = model_quadratic_25,
+                          rf = model_rf_25,
+                          bart = model_bart_25,
+                          svm = model_svm_25,
+                          xgb = model_xgb_25,
+                          nn = model_nn_25
+)
 
+# save(models_corr_25_depth_1, file="data/run models/models_corr_25_depth_1.Rda")
 
 
 # Quantile 50% ------------------------------------------------------------
@@ -159,8 +168,16 @@ model_nn_50 <- correctionModel(data = data_NN_50, model = 'nn',
                                hidden = 4, algorithm = "rprop+", seed = 023)
 
 
+models_corr_50_depth_1 <- list(lasso = model_lasso_50,
+                               quadratic = model_quadratic_50,
+                               rf = model_rf_50,
+                               bart = model_bart_50,
+                               svm = model_svm_50,
+                               xgb = model_xgb_50,
+                               nn = model_nn_50
+)
 
-
+# save(models_corr_50_depth_1, file="data/run models/models_corr_50_depth_1.Rda")
 
 # Quantile 75% ------------------------------------------------------------
 
@@ -229,8 +246,17 @@ model_nn_75 <- correctionModel(data = data_NN_75, model = 'nn',
                                hidden = 4, algorithm = "rprop+", seed = 023)
 
 
+models_corr_75_depth_1 <- list(lasso = model_lasso_75,
+                          quadratic = model_quadratic_75,
+                          rf = model_rf_75,
+                          bart = model_bart_75,
+                          svm = model_svm_75,
+                          xgb = model_xgb_75,
+                          nn = model_nn_75
+)
 
 
+# save(models_corr_75_depth_1, file="data/run models/models_corr_75_depth_1.Rda")
 
 
 

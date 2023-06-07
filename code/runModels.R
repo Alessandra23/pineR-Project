@@ -61,6 +61,7 @@ Woodford <- quantileValues(data = readWeightedData$Woodford, N = 50, npop = 20, 
 Ballybrittas <- quantileValues(data = readWeightedData$Ballybrittas, N = 50, npop = 20, ntimes = 10, ngen = 1,
                             species = 1, depth = depth, correction = F)
 
+# set the enf of the name as the depth  (runs_weighted_depth_1 or runs_weighted_depth_2 or runs_weighted_depth_3)
 runs_weighted_depth_3 <- list(Hortland = Hortland ,
                               Ballinagee = Ballinagee,
                               Oakwood = Oakwood ,
